@@ -1,29 +1,20 @@
-
 const form = document.getElementById("form");
 
 form.addEventListener("submit", (e) => {
     e.preventDefault();
 
     //Capturei os dados do form
-    const nome = document.getElementById("fnome");
-    const phone = document.getElementById("number");
+
     const email = document.getElementById("email");
-    const city = document.getElementById("city");
-    const state = document.getElementById("state")
     const password = document.getElementById("password");
 
     const userData = JSON.stringify({
-        name: nome.value,
-        phone: phone.value,
-        email: email.value,
-        city: city.value,
-        state: state.value,
-        password: password.value,
-        image: "",
 
+        email: email.value,
+        password: password.value
     });
 
-    fetch("http://10.92.198.38:3001/signup", {
+    fetch("http://10.92.198.38:8080/auth/signin", {
         method: "Post",
         body: userData,
         headers: { "Content-type": "application/json; charset=UTF-8" }
@@ -31,8 +22,6 @@ form.addEventListener("submit", (e) => {
         .then((result) => result.json())
         .then((data) => console.log(data))
         .catch((err) => console.log(err))
-
-
 
 
 

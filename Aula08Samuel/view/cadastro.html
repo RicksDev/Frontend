@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="../style.css" />
     <title>Post data to a server</title>
   </head>
 
@@ -11,21 +11,13 @@
     <h1>Post Data to a server</h1>
 
     <div class="form-container">
-      <p class="title">Login</p>
-      <form action="" id="form">
+      <p class="title">Cadastro</p>
+      <form action="" id="form" method="post">
         <div class="input-group">
-          <label for="nome">Name:</label>
+          <label for="nome" style="margin-top: 15px;">Name:</label>
           <input type="text" name="nome" id="fnome" placeholder="Rickss" />
 
-          <label for="number">phone number:</label><br />
-          <input
-            type="text"
-            id="number"
-            name="number"
-            placeholder="(11)9313..."
-          /><br />
-
-          <label for="email">Email:</label><br />
+          <label for="email"style="margin-top: 15px;">Email:</label><br />
           <input
             type="text"
             id="email"
@@ -33,17 +25,11 @@
             placeholder="filho.riardo@gmail.com"
           /><br />
 
-          <label for="city">City:</label><br />
-          <input type="text" id="city" name="city" placeholder="Cotia" /><br />
-
-          <label for="state">State:</label><br />
-          <input type="text" id="state" name="state" placeholder="Sp" /><br />
-
-          <label for="password">Password</label><br />
-          <input type="text" name="password" id="password" />
+          <label for="password" style="margin-top: 15px;">Password</label><br />
+          <input type="text" name="password" id="password" placeholder="********"/>
         </div>
 
-        <button value="submit" id="submit" class="sign">Sign in</button>
+        <button value="submit" id="submit" class="sign">Increva-se</button>
       </form>
       <div class="social-message">
         <div class="line"></div>
@@ -114,6 +100,6 @@
 
         <input type="submit" value="Submit">
       </form>  -->
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
   </body>
 </html>
