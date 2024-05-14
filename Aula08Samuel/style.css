@@ -15,6 +15,10 @@ body {
     margin: auto;
     margin-top: 150px;
 } */
+header {
+  height: 100px;
+  background-color: black;
+}
 
 .form-container {
     width: 320px;
@@ -120,6 +124,14 @@ body {
     display: flex;
     justify-content: center;
   }
+  .btn-back {
+    height: 30px;
+    width: 60px;
+    background-color: gray;
+    border-radius: 5px;
+
+    cursor: pointer;
+}
   
   .social-icons .icon {
     border-radius: 0.125rem;

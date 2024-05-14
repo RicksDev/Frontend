@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mini Blog - Post</title>
+    <link rel="stylesheet" href="../estilo.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="index.html">
+            <button class="btn-back">Voltar</button>
+        </a>
+        <div class="form-container">
+            <p class="title">Post</p>
+            <form action="" id="form" method="post">
+              <div class="input-group">
+                <label for="usuario" style="margin-top: 15px;">Usuário:</label>
+                <input type="text" name="usuario" id="usuario" placeholder="Rickss" />
+                
+                <label for="mensagem" style="margin-top: 15px;">Mensagem:</label>
+                <input type="text" name="mensagem" id="mensagem" placeholder="Mensagem a ser dita no post...">
+      
+                <label for="imagem" style="margin-top: 15px;">Image:</label>
+                <input type="file" name="imagem" id="imagem" placeholder="Anexe o arquivo da sua imagem">
+                
+              </div>
+      
+              <button value="submit" id="submit" class="sign">Postar</button>
+            </form>
+        </div>
+    </header>
+</body>
+<script src="../js/post.js"></script>
+</html>
