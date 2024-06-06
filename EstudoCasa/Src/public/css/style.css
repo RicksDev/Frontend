@@ -1,0 +1,107 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html, body {
+    height: 100%;        /* Garante que o body e html ocupem toda a altura da janela */
+    overflow-y: auto;    /* Permite rolagem vertical automática se necessário */
+}
+
+.container {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+main {
+    flex: 1;
+}
+.logoInicial {
+    width: 80px;
+    height: 30px;
+    margin-top: 10px;
+    margin-left: 20px;
+}
+.logoInicial:hover {
+    cursor: pointer;
+}
+.header {
+    height: 70px;
+    background-color: rgba(250, 235, 215, 0.55);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.lista-first {
+    display: flex;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+}
+.logo-carrinho {
+    width: 30px;
+    height: 28px;
+    margin-right: 20px;
+}
+li {
+    margin-left: 50px;
+    font-family: "Josefin Sans", sans-serif;
+}
+li:hover {
+    color: rgb(255, 0, 0);
+    cursor: pointer;
+    transition: all ease 0.3s;
+}
+
+/* Carrosel */
+/* Adicione ao seu arquivo CSS */
+.carousel {
+    width: 100%;
+    height: 400px;
+    position: relative;
+  }
+  
+  .slides {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+  }
+  
+  .slide {
+    width: 100%;
+    position: absolute;
+    display: none;
+  }
+  
+  .slide img {
+    width: 100%;
+    height: 100%;
+ 
+  }
+  
+  .navigation {
+    width: 100%;
+    height: 50px;
+    position: absolute;
+    bottom: -200px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .navigation label {
+    width: 20px;
+    height: 20px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin: 10px;
+    cursor: pointer;
+  }
+  
+  #slide1:checked ~ .slides .slide:nth-child(1),
+  #slide2:checked ~ .slides .slide:nth-child(2),
+  #slide3:checked ~ .slides .slide:nth-child(3) {
+    display: block;
+  }
+
+ 
