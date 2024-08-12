@@ -18,10 +18,11 @@ main {
     flex: 1;
 }
 .logoInicial {
-    width: 80px;
+    width: 100%;
     height: 30px;
     margin-top: 10px;
     margin-left: 20px;
+
 }
 .logoInicial:hover {
     cursor: pointer;
@@ -60,18 +61,22 @@ li:hover {
     width: 100%;
     height: 400px;
     position: relative;
+    margin-left: 160px;
   }
   
   .slides {
     width: 100%;
     height: 100%;
     position: absolute;
+    display: block;
   }
   
   .slide {
-    width: 100%;
+    width: 80%;
     position: absolute;
-    display: none;
+    display: flex;
+    text-align: center;
+    height: 80%;
   }
   
   .slide img {
@@ -103,5 +108,32 @@ li:hover {
   #slide3:checked ~ .slides .slide:nth-child(3) {
     display: block;
   }
+.section {
+  text-align: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+  .footer {
+    background-color: black;
+    height: 100px;
+  }
+
+.container-footer {
+  justify-content: space-around;
+  display: flex;
+  align-items: center;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+}
+.div-esquerda {
+  margin-top: 40px;
+}
+.div-meio {
+  margin-top: 40px;
+}
+.div-direita {
+  margin-top: 40px;
+}
+
 
  
